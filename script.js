@@ -80,7 +80,7 @@ function createcard2(image,name){
   const playmusic=(track)=>{
     currentsong.src="songs/"+track
     currentsong.play()
-     play.src="pause.svg.svg"
+     play.src="svgs/pause.svg.svg"
      document.querySelector(".songinfo").innerHTML=track.replaceAll("%20"," ")
      document.querySelector(".songduration").innerHTML
 
@@ -91,14 +91,14 @@ function createcard2(image,name){
      let songul =document.querySelector(".songlist").getElementsByTagName("ul")[0]
      for (const song of songs ) {
        songul.innerHTML=songul.innerHTML+`   <li>
-                            <img src="misic (1).svg" alt="" >
+                            <img src="svgs/misic (1).svg" alt="" >
                             <div class="info">
                                 <div>${song.replaceAll("%20"," ")}</div>
                                 <div>harsh</div>
                             </div>
                               <div class="playnow">
                                <span> play now</span>
-                                <img src="play.svg" alt=" ">
+                                <img src="svgs/play.svg" alt=" ">
                             </div>
                         </li>`;
       
@@ -112,11 +112,11 @@ function createcard2(image,name){
      play.addEventListener("click",()=>{
       if(currentsong.paused){
         currentsong.play()
-        play.src="pause.svg.svg"
+        play.src="svgs/pause.svg.svg"
       }
       else{
         currentsong.pause()
-        play.src="play.svg"
+        play.src="svgs/play.svg"
       }
      })
      currentsong.addEventListener("timeupdate",()=>{

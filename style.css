@@ -209,10 +209,10 @@ position: relative;
     bottom: 30px;
     width: 70vw;
     padding: 5px;
-    filter: invert(1);
+    /* filter: invert(1); */
     margin: auto;
     
-    background-color: rgb(224, 219, 219);
+    background-color: rgb(134, 132, 132);
 }
 .playbar img{
     height: 35px;
@@ -307,6 +307,7 @@ scrollbar-thumb:hover {
    width: 97%;
    margin-left: 10px;
    position: absolute;
+   filter: invert(1);
    bottom: 0px;
    border-radius: 10px;
    margin: 1px;
