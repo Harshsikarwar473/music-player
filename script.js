@@ -60,7 +60,7 @@ function createcard2(image,name){
   createcard2("yo-yo-honey-singh-raat-jashan-d8cqx2677dvf9uda.jpg","honey singh");
   createcard2("sonu nigam.png","sonu nigam");
    async function getsongs(){
-    let a = await fetch("http://127.0.0.1:3000/songs/");
+    let a = await fetch("songs");
     let response= await a.text();
     console.log(response);
     let element= document.createElement("div")
